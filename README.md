@@ -1,11 +1,6 @@
-# Aplikasi Web
-Contoh pengaplikasian MVC menggunakan native PHP secara sederhana.
-Pada versi ini, digunakan style psr4 untuk autoloading.
+# Aplikasi Web Pemesanan Tiket Pesawat
+Kelompok kami membuat sebuah aplikasi web yang memungkinkan pengguna untuk mencari, memesan, dan membeli tiket pesawat secara online. Aplikasi ini akan mencakup fitur pencarian jadwal penerbangan, perbandingan harga tiket, pemesanan, pembayaran, dan konfirmasi tiket. Aplikasi web ini dibuat untuk mempermudah masyarakat dalam melakukan pembelian tiket pesawat tanpa harus datang ke agen perjalanan atau bandara, Menyediakan solusi cepat dan efisien untuk pencarian dan pemesanan tiket sesuai kebutuhan, dan mendukung tren digitalisasi di sektor perjalanan dan pariwisata.
 
-Dalam contoh ini tidak ada routing controller melalui address bar, melainkan menggunakan query browser biasa.
+Aplikasi ini bisa digunakan oleh pelancong individu, baik untuk keperluan liburan maupun bisnis, perusahaan yang memesan tiket untuk pegawai mereka, dan agen perjalanan kecil yang memerlukan platform untuk mendukung operasional. Aplikasi ini akan diujicoba dengan estimasi 4-5 hari untuk sampai hasil yang memuaskan.
 
-Untuk tabel-nya dapat dibuat terlebih dahulu menggunakan database mysql
-
-CREATE TABLE mahasiswa (id int(11) not null auto_increment primary key, nim char(14) not null, nama varchar(255) not null) -> copy dan paste ke jendela query mysql
-
-Untuk koneksi database, saya menggunakan PDO sebagai pengganti dari mysql_connect() info lengkap, kunjungi http://php.net/manual/en/book.pdo.php
+Cara kerja aplikasi ini sangatlah mudah seperti masukkan tujuan Anda, masukkan jadwal penerbangan Anda, dan pilih maskapai yang ingin dinaiki. Aplikasi ini sangat mendukung untuk semua jenis pembayaran sehingga bagi penumpang bisa memilih menggunakan m-Banking, Viitual Account, atau melalui gerai
