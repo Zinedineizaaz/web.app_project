@@ -1,4 +1,4 @@
-# mvc-example
+# Aplikasi Web Pemesanan Tiket Pesawat
 Contoh pengaplikasian MVC menggunakan native PHP secara sederhana.
 Pada versi ini, digunakan style psr4 untuk autoloading.
 
