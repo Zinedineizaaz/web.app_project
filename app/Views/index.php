@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<title>Native MVC Example</title>
-		<link rel="stylesheet" href="/mvc-example/assets/css/bootstrap.css" />
-		<script type="text/javascript" src="/mvc-example/assets/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="/appweb/web.app_project/assets/css/bootstrap.css" />
+		<script type="text/javascript" src="/appweb/web.app_project/assets/js/bootstrap.js"></script>
 	</head>
 	<body>
 		<div class="row">
