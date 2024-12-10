@@ -1,21 +1,3 @@
-<?php
-    $promo = [
-        ["discount" => "35%", "description" => "Diskon besar untuk paket liburan keluarga!"],
-        ["discount" => "50%", "description" => "Promo spesial untuk kamu yang memesan sekarang!"],
-    ];
-
-    $recommendations = [
-        ["image" => "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?cs=srgb&dl=pexels-freestockpro-2166559.jpg&fm=jpg&_gl=1*a6z2*_ga*NTczNTkxMzE1LjE3MzM3NTg1OTc.*_ga_8JE65Q40S6*MTczMzc1ODU5Ni4xLjEuMTczMzc1ODYxNy4wLjAuMA..", "title" => "Bali", "description" => "Menikmati keindahan pantai dan budaya lokal."],
-        ["image" => "https://images.pexels.com/photos/6863992/pexels-photo-6863992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "title" => "Bromo", "description" => "Petualangan seru di gunung berapi."],
-        ["image" => "https://images.pexels.com/photos/10482395/pexels-photo-10482395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "title" => "Raja Ampat", "description" => "Keindahan bawah laut yang luar biasa."],
-    ];
-
-    $reviews = [
-        "Tempat yang luar biasa!",
-        "Liburan yang tidak terlupakan!",
-        "Pemandangan yang menakjubkan!",
-    ];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,44 +53,40 @@
             padding: 20px;
             border-radius: 10px;
         }
-
-        .login {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-
-        .login a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 10px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 10px;
-        }
-
-        .logo span {
-            font-size: 1.5rem;
-        }
     </style>
 </head>
 <body>
-    <header class="bg-primary text-white p-3 position-relative">
-        <div class="container d-flex align-items-center">
-            <div class="logo">
-                <h1>ziluyatravel</h1>
-                <span>✈️</span>
+    <!-- Navigasi Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ziluyatravel ✈️</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destinasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-light btn-sm" href="#">Sign Up</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="login">
-            <a href="">Login</a> | <a href="">Sign Up</a>
-        </div>
-    </header>
+    </nav>
 
     <div class="search-bar bg-primary py-4">
         <div class="container text-center">
@@ -129,6 +107,7 @@
         </div>
     </div>
 
+    <!-- Promo Section -->
     <div class="promo py-5">
         <div class="container d-flex justify-content-center gap-4">
             <?php foreach ($promo as $p): ?>
@@ -140,6 +119,7 @@
         </div>
     </div>
 
+    <!-- Rekomendasi Section -->
     <div class="recommendations py-5">
         <div class="container">
             <h2 class="text-center mb-4">Rekomendasi Wisata</h2>
@@ -159,6 +139,7 @@
         </div>
     </div>
 
+    <!-- Reviews Section -->
     <div class="reviews py-5">
         <div class="container">
             <h3 class="text-center mb-4">Apa kata mereka?</h3>
@@ -174,10 +155,13 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>Site menu: <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Help</a> | <a href="#">Terms</a></p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
